@@ -9,10 +9,20 @@
             background-color: rgb(35, 245, 245);
             color: rgb(37, 32, 32);
         }
+        a {
+            text-transform: capitalize;
+        }
     </style>
     <title>Git Pub</title>
 </head>
 <body>
     <h1>Welcome to Git Pub!</h1>
+    <ul>
+        <% for(let i= 0; i < allDrinks.length; i++) { %>
+            <li>
+                <a href="/drinks/<%=i%>"><%= allDrinks[i].name %></a>
+            </li>
+        <% } %>
+    </ul>
 </body>
 </html>
