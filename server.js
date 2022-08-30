@@ -12,8 +12,9 @@ app.get("/drinks", function(req, res){
         allDrinks: drinks
     })
 })
-
-
+app.get("/drinks/:id", (req, res) => {
+    res.send(req.params.id);
+})
 
 
 // Set up the server to listen:
