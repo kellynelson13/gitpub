@@ -16,14 +16,10 @@
     <title>Git Pub</title>
 </head>
 <body>
-    <h1>Welcome to Git Pub Drinks!</h1>
-    <ul>
-        <% for(let i= 0; i < allDrinks.length; i++) { %>
-            <li>
-                <a href="/drinks/<%=i%>"><%= allDrinks[i].name %></a>
-            </li>
-        <% } %>
-    </ul>
-    <a href="/food/">Hungry?</a>
+    <h1>At foo bar</h1>
+    <h2><%=food.name %></h2>
+    <img src=<%=food.image+".jpg"%> alt="<%=food.name %>">
+    <h3><%=food.price %></h3>
+    <a href="/food/">back</a>
 </body>
 </html>
