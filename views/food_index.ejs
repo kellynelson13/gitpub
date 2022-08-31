@@ -1,29 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            background-color: rgb(35, 245, 245);
-            color: rgb(37, 32, 32);
-        }
-        a {
-            text-transform: capitalize;
-        }
+      body {
+        background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60);
+        color: rgb(37, 32, 32);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      a {
+        text-transform: capitalize;
+      }
+      h1 {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+      }
+      ul {
+        text-align: center;
+        list-style: none;
+      }
+      div {
+        background-color: rgba(236, 226, 226, 0.7);
+        width: 50%;
+        margin: 0 auto;
+        padding: 10px 0;
+        border-radius: 30px;
+      }
+      li {
+        margin: 5px;
+        font-family: "Poppins", sans-serif;
+      }
+      #link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+      }
     </style>
     <title>Git Pub</title>
-</head>
-<body>
-    <h1>Welcome to Git Pub Food!</h1>
-    <ul>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to Git Pub Food!</h1>
+      <ul>
         <% for(let i= 0; i < allFood.length; i++) { %>
-            <li>
-                <a href="/food/<%=i%>"><%= allFood[i].name %></a>
-            </li>
+        <li>
+          <a href="/food/<%=i%>"><%= allFood[i].name %></a>
+        </li>
         <% } %>
-    </ul>
-    <a href="/drinks/">Thirsty?</a>
-</body>
+      </ul>
+      <a id="link" href="/drinks/">Thirsty?</a>
+    </div>
+  </body>
 </html>

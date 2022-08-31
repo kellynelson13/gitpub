@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        body {
-            background-color: rgb(35, 245, 245);
-            color: rgb(37, 32, 32);
-        }
-        a {
-            text-transform: capitalize;
-        }
+      body {
+        background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60);
+        color: rgb(37, 32, 32);
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      a {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      img {
+        width: 50%;
+        border-radius: 20px;
+      }
     </style>
     <title>Git Pub</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>At foo bar</h1>
     <h2><%=food.name %></h2>
     <img src=<%=food.image+".jpg"%> alt="<%=food.name %>">
-    <h3><%=food.price %></h3>
-    <a href="/food/">back</a>
-</body>
+    <h3><%="$"+food.price %></h3>
+    <a href="/food/">Back</a>
+  </body>
 </html>
